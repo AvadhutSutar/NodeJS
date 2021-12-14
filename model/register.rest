@@ -1,0 +1,39 @@
+POST http://localhost:3000/register
+content-type:application/json
+
+{
+    "first_name":"Avadhut",
+    "last_name":"Sutar",
+    "email":"avadhut@gmail.com",
+    "password":"1212712"
+}
+
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "email":"avadhut@gmail.com",
+    "password":"1212712"
+}
+
+###
+GET http://localhost:3000/welcome
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFiNzI1NDQ1N2U5MDdjM2JjNDZiYTI3IiwiZW1haWwiOiJhdmFkaHV0QGdtYWlsLmNvbSIsImlhdCI6MTYzOTQxNTA5NSwiZXhwIjoxNjM5NDIyMjk1fQ.j9lpa1Ok5DOiYCDElPE5AHyh3oOcUrlUTr_qeMBBlsM
+ 
+
+
+###
+post http://localhost:3000/items
+Content-Type: application/json,
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFiNzI1NDQ1N2U5MDdjM2JjNDZiYTI3IiwiZW1haWwiOiJhdmFkaHV0QGdtYWlsLmNvbSIsImlhdCI6MTYzOTQyMTkwNiwiZXhwIjoxNjM5NDI5MTA2fQ.T_8x4xtCLHP-4laYbeHlnN4llOQHGPpoNKWQAXtfYSg
+
+{
+    "item_name": "bat",
+    "done":"false"
+}
+
+###
+GET http://localhost:3000/items
+Content-Type: application/json,
+x-access-token:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyX2lkIjoiNjFiNzI1NDQ1N2U5MDdjM2JjNDZiYTI3IiwiZW1haWwiOiJhdmFkaHV0QGdtYWlsLmNvbSIsImlhdCI6MTYzOTQyMTkwNiwiZXhwIjoxNjM5NDI5MTA2fQ.T_8x4xtCLHP-4laYbeHlnN4llOQHGPpoNKWQAXtfYSg
